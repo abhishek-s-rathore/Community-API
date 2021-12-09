@@ -1,12 +1,8 @@
 # Community API Spec
 
-## Running API tests locally
+## Live Link For API
 
-To locally run the provided Postman collection against your backend, execute:
-
-```
-POST=3000 npm start
-```
+https://community-api-v1.herokuapp.com
 
 
 ## Considerations for your backend with [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
