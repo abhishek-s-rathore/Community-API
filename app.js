@@ -7,6 +7,7 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 
 // Requiring Routers
+var indexRouter = require('./routes/index');
 var tagsRouter = require('./routes/tags');
 var usersRouter = require('./routes/users');
 var profileRouter = require('./routes/profile');
@@ -39,6 +40,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Using The Routes
+app.use('/api', indexRouter);
 app.use('/api/tags', tagsRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/profile', profileRouter);
